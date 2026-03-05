@@ -23,7 +23,7 @@ func init() {
 	rootCmd.AddCommand(updateCmd)
 	updateCmd.Flags().StringVar(&updateJSON, "json", "", "Replacement binding as JSON")
 	updateCmd.Flags().StringVar(&updateFile, "file", "", "Target file in config directory (e.g. tmux.json)")
-	updateCmd.MarkFlagRequired("json")
+	_ = updateCmd.MarkFlagRequired("json")
 }
 
 func runUpdate(cmd *cobra.Command, args []string) error {
