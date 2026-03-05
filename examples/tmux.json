@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "bindings": [
+    {"id": "tx000001", "app": "tmux", "description": "Send prefix", "keys": ["Ctrl+b"], "alternates": [], "tags": ["prefix"], "notes": "Default prefix — all prefix bindings start with this"},
+    {"id": "tx000002", "app": "tmux", "description": "Split horizontal", "keys": ["prefix + \""], "alternates": [], "tags": ["pane"], "notes": ""},
+    {"id": "tx000003", "app": "tmux", "description": "Split vertical", "keys": ["prefix + %"], "alternates": [], "tags": ["pane"], "notes": ""},
+    {"id": "tx000004", "app": "tmux", "description": "Navigate panes", "keys": ["prefix + arrow keys"], "alternates": ["prefix + h/j/k/l"], "tags": ["pane"], "notes": "h/j/k/l requires vi mode or plugin"},
+    {"id": "tx000005", "app": "tmux", "description": "Close pane", "keys": ["prefix + x"], "alternates": [], "tags": ["pane"], "notes": "Prompts for confirmation"},
+    {"id": "tx000006", "app": "tmux", "description": "Zoom pane (toggle)", "keys": ["prefix + z"], "alternates": [], "tags": ["pane"], "notes": "Fills window with current pane"},
+    {"id": "tx000007", "app": "tmux", "description": "Resize pane", "keys": ["prefix + Ctrl+arrow"], "alternates": ["prefix + Alt+arrow"], "tags": ["pane"], "notes": ""},
+    {"id": "tx000008", "app": "tmux", "description": "Swap pane down", "keys": ["prefix + }"], "alternates": ["prefix + {"], "tags": ["pane"], "notes": "{ = swap up"},
+    {"id": "tx000009", "app": "tmux", "description": "Toggle pane layout", "keys": ["prefix + Space"], "alternates": [], "tags": ["pane"], "notes": "Cycles through even-horizontal, even-vertical, etc."},
+    {"id": "tx00000a", "app": "tmux", "description": "New window", "keys": ["prefix + c"], "alternates": [], "tags": ["window"], "notes": ""},
+    {"id": "tx00000b", "app": "tmux", "description": "Next window", "keys": ["prefix + n"], "alternates": [], "tags": ["window"], "notes": ""},
+    {"id": "tx00000c", "app": "tmux", "description": "Previous window", "keys": ["prefix + p"], "alternates": [], "tags": ["window"], "notes": ""},
+    {"id": "tx00000d", "app": "tmux", "description": "Select window by number", "keys": ["prefix + 0-9"], "alternates": [], "tags": ["window"], "notes": ""},
+    {"id": "tx00000e", "app": "tmux", "description": "Rename window", "keys": ["prefix + ,"], "alternates": [], "tags": ["window"], "notes": ""},
+    {"id": "tx00000f", "app": "tmux", "description": "Close window", "keys": ["prefix + &"], "alternates": [], "tags": ["window"], "notes": "Prompts for confirmation"},
+    {"id": "tx000010", "app": "tmux", "description": "List windows", "keys": ["prefix + w"], "alternates": [], "tags": ["window"], "notes": "Interactive chooser"},
+    {"id": "tx000011", "app": "tmux", "description": "Detach session", "keys": ["prefix + d"], "alternates": [], "tags": ["session"], "notes": ""},
+    {"id": "tx000012", "app": "tmux", "description": "Rename session", "keys": ["prefix + $"], "alternates": [], "tags": ["session"], "notes": ""},
+    {"id": "tx000013", "app": "tmux", "description": "Switch session", "keys": ["prefix + s"], "alternates": [], "tags": ["session"], "notes": "Interactive session chooser"},
+    {"id": "tx000014", "app": "tmux", "description": "Enter copy mode", "keys": ["prefix + ["], "alternates": [], "tags": ["copy"], "notes": "Navigate with vi or emacs keys depending on mode-keys"},
+    {"id": "tx000015", "app": "tmux", "description": "Paste buffer", "keys": ["prefix + ]"], "alternates": [], "tags": ["copy"], "notes": ""},
+    {"id": "tx000016", "app": "tmux", "description": "List key bindings", "keys": ["prefix + ?"], "alternates": [], "tags": ["help"], "notes": ""},
+    {"id": "tx000017", "app": "tmux", "description": "Command prompt", "keys": ["prefix + :"], "alternates": [], "tags": ["command"], "notes": ""},
+    {"id": "tx000018", "app": "tmux", "description": "Reload config", "keys": ["prefix + r"], "alternates": [], "tags": ["config"], "notes": "Only if bound — not a default binding"},
+    {"id": "tx000019", "app": "tmux", "description": "Last window", "keys": ["prefix + l"], "alternates": [], "tags": ["window"], "notes": "Toggle between last two windows"},
+    {"id": "tx00001a", "app": "tmux", "description": "Display pane numbers", "keys": ["prefix + q"], "alternates": [], "tags": ["pane"], "notes": "Press number to jump to that pane"}
+  ]
+}

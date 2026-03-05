@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "bindings": [
+    {"id": "fz000001", "app": "fzf", "description": "Move cursor up", "keys": ["Ctrl+k"], "alternates": ["Ctrl+p", "Up"], "tags": ["navigation"], "notes": ""},
+    {"id": "fz000002", "app": "fzf", "description": "Move cursor down", "keys": ["Ctrl+j"], "alternates": ["Ctrl+n", "Down"], "tags": ["navigation"], "notes": ""},
+    {"id": "fz000003", "app": "fzf", "description": "Page up", "keys": ["PgUp"], "alternates": [], "tags": ["navigation"], "notes": ""},
+    {"id": "fz000004", "app": "fzf", "description": "Page down", "keys": ["PgDn"], "alternates": [], "tags": ["navigation"], "notes": ""},
+    {"id": "fz000005", "app": "fzf", "description": "Go to top", "keys": ["Alt+<"], "alternates": [], "tags": ["navigation"], "notes": ""},
+    {"id": "fz000006", "app": "fzf", "description": "Go to bottom", "keys": ["Alt+>"], "alternates": [], "tags": ["navigation"], "notes": ""},
+    {"id": "fz000007", "app": "fzf", "description": "Accept selection", "keys": ["Enter"], "alternates": [], "tags": ["action"], "notes": ""},
+    {"id": "fz000008", "app": "fzf", "description": "Cancel", "keys": ["Esc"], "alternates": ["Ctrl+c", "Ctrl+g"], "tags": ["action"], "notes": ""},
+    {"id": "fz000009", "app": "fzf", "description": "Toggle selection", "keys": ["Tab"], "alternates": [], "tags": ["selection"], "notes": "In multi-select mode"},
+    {"id": "fz00000a", "app": "fzf", "description": "Deselect", "keys": ["Shift+Tab"], "alternates": [], "tags": ["selection"], "notes": "In multi-select mode"},
+    {"id": "fz00000b", "app": "fzf", "description": "Select all", "keys": ["Ctrl+a"], "alternates": [], "tags": ["selection"], "notes": "In multi-select mode (if bound)"},
+    {"id": "fz00000c", "app": "fzf", "description": "Deselect all", "keys": ["Ctrl+d"], "alternates": [], "tags": ["selection"], "notes": "In multi-select mode (if bound)"},
+    {"id": "fz00000d", "app": "fzf", "description": "Clear query", "keys": ["Alt+Backspace"], "alternates": [], "tags": ["edit"], "notes": "Delete word backward"},
+    {"id": "fz00000e", "app": "fzf", "description": "Delete character", "keys": ["Ctrl+d"], "alternates": ["Delete"], "tags": ["edit"], "notes": "Also EOF on empty query"},
+    {"id": "fz00000f", "app": "fzf", "description": "Move cursor to start", "keys": ["Ctrl+a"], "alternates": ["Home"], "tags": ["edit"], "notes": ""},
+    {"id": "fz000010", "app": "fzf", "description": "Move cursor to end", "keys": ["Ctrl+e"], "alternates": ["End"], "tags": ["edit"], "notes": ""},
+    {"id": "fz000011", "app": "fzf", "description": "Kill to end of line", "keys": ["Ctrl+k"], "alternates": [], "tags": ["edit"], "notes": ""},
+    {"id": "fz000012", "app": "fzf", "description": "Kill to start of line", "keys": ["Ctrl+u"], "alternates": [], "tags": ["edit"], "notes": ""},
+    {"id": "fz000013", "app": "fzf", "description": "Toggle preview", "keys": ["Ctrl+/"], "alternates": [], "tags": ["preview"], "notes": "If preview is configured"},
+    {"id": "fz000014", "app": "fzf", "description": "Scroll preview up", "keys": ["Shift+Up"], "alternates": [], "tags": ["preview"], "notes": ""},
+    {"id": "fz000015", "app": "fzf", "description": "Scroll preview down", "keys": ["Shift+Down"], "alternates": [], "tags": ["preview"], "notes": ""},
+    {"id": "fz000016", "app": "fzf", "description": "Toggle sort", "keys": ["Ctrl+r"], "alternates": [], "tags": ["general"], "notes": "Toggle between relevance and input order"},
+    {"id": "fz000017", "app": "fzf", "description": "Fuzzy file search (shell)", "keys": ["Ctrl+t"], "alternates": [], "tags": ["shell"], "notes": "Paste selected file path — requires shell integration"},
+    {"id": "fz000018", "app": "fzf", "description": "Change directory (shell)", "keys": ["Alt+c"], "alternates": [], "tags": ["shell"], "notes": "cd into selected directory — requires shell integration"},
+    {"id": "fz000019", "app": "fzf", "description": "History search (shell)", "keys": ["Ctrl+r"], "alternates": [], "tags": ["shell"], "notes": "Replaces default reverse-i-search — requires shell integration"}
+  ]
+}

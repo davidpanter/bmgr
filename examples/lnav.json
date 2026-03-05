@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "bindings": [
+    {"id": "ln000001", "app": "lnav", "description": "Help", "keys": ["?"], "alternates": [], "tags": ["general"], "notes": ""},
+    {"id": "ln000002", "app": "lnav", "description": "Quit", "keys": ["q"], "alternates": [], "tags": ["general"], "notes": ""},
+    {"id": "ln000003", "app": "lnav", "description": "Search forward", "keys": ["/"], "alternates": [], "tags": ["search"], "notes": "Regex search"},
+    {"id": "ln000004", "app": "lnav", "description": "Search backward", "keys": ["?"], "alternates": [], "tags": ["search"], "notes": "In log view"},
+    {"id": "ln000005", "app": "lnav", "description": "Next match", "keys": ["n"], "alternates": ["N"], "tags": ["search"], "notes": "N = previous match"},
+    {"id": "ln000006", "app": "lnav", "description": "Filter in", "keys": [":filter-in <regex>"], "alternates": [], "tags": ["filter"], "notes": "Show only matching lines"},
+    {"id": "ln000007", "app": "lnav", "description": "Filter out", "keys": [":filter-out <regex>"], "alternates": [], "tags": ["filter"], "notes": "Hide matching lines"},
+    {"id": "ln000008", "app": "lnav", "description": "Toggle filters", "keys": ["x"], "alternates": [], "tags": ["filter"], "notes": "Enable/disable all filters"},
+    {"id": "ln000009", "app": "lnav", "description": "Clear filters", "keys": [":reset-session"], "alternates": [], "tags": ["filter"], "notes": ""},
+    {"id": "ln00000a", "app": "lnav", "description": "Switch view", "keys": ["Tab"], "alternates": [], "tags": ["navigation"], "notes": "Cycle through log, text, histogram, db, spectro views"},
+    {"id": "ln00000b", "app": "lnav", "description": "Log view", "keys": ["Ctrl+l"], "alternates": [], "tags": ["navigation"], "notes": ""},
+    {"id": "ln00000c", "app": "lnav", "description": "Text view", "keys": ["Ctrl+t"], "alternates": [], "tags": ["navigation"], "notes": ""},
+    {"id": "ln00000d", "app": "lnav", "description": "Histogram view", "keys": ["i"], "alternates": [], "tags": ["navigation"], "notes": "Show log message frequency"},
+    {"id": "ln00000e", "app": "lnav", "description": "DB query view", "keys": ["v"], "alternates": [], "tags": ["navigation"], "notes": "Show results of SQL queries"},
+    {"id": "ln00000f", "app": "lnav", "description": "Next error", "keys": ["e"], "alternates": ["E"], "tags": ["navigation"], "notes": "E = previous error"},
+    {"id": "ln000010", "app": "lnav", "description": "Next warning", "keys": ["w"], "alternates": ["W"], "tags": ["navigation"], "notes": "W = previous warning"},
+    {"id": "ln000011", "app": "lnav", "description": "Go to time", "keys": [":goto <timestamp>"], "alternates": [], "tags": ["navigation"], "notes": "Jump to specific time"},
+    {"id": "ln000012", "app": "lnav", "description": "Go to line", "keys": [":goto <line>"], "alternates": [], "tags": ["navigation"], "notes": "Jump to line number"},
+    {"id": "ln000013", "app": "lnav", "description": "Scroll page up/down", "keys": ["PgUp", "PgDn"], "alternates": ["Space"], "tags": ["navigation"], "notes": "Space = page down"},
+    {"id": "ln000014", "app": "lnav", "description": "Top/bottom of file", "keys": ["Home", "End"], "alternates": ["g", "G"], "tags": ["navigation"], "notes": ""},
+    {"id": "ln000015", "app": "lnav", "description": "Toggle timestamps", "keys": ["p"], "alternates": [], "tags": ["view"], "notes": "Show relative time"},
+    {"id": "ln000016", "app": "lnav", "description": "Mark/bookmark line", "keys": ["m"], "alternates": [], "tags": ["bookmark"], "notes": ""},
+    {"id": "ln000017", "app": "lnav", "description": "Next bookmark", "keys": ["M"], "alternates": [], "tags": ["bookmark"], "notes": ""},
+    {"id": "ln000018", "app": "lnav", "description": "Command prompt", "keys": [":"], "alternates": [], "tags": ["general"], "notes": ""},
+    {"id": "ln000019", "app": "lnav", "description": "SQL prompt", "keys": [";"], "alternates": [], "tags": ["general"], "notes": "Query log data with SQL"},
+    {"id": "ln00001a", "app": "lnav", "description": "Pipe line to command", "keys": ["|"], "alternates": [], "tags": ["general"], "notes": "Pipe current line to shell command"}
+  ]
+}

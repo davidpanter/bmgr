@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "bindings": [
+    {"id": "lg000001", "app": "lazygit", "description": "Stage file", "keys": ["Space"], "alternates": [], "tags": ["staging"], "notes": "Toggle stage/unstage"},
+    {"id": "lg000002", "app": "lazygit", "description": "Stage all files", "keys": ["a"], "alternates": [], "tags": ["staging"], "notes": ""},
+    {"id": "lg000003", "app": "lazygit", "description": "Commit staged changes", "keys": ["c"], "alternates": [], "tags": ["commit"], "notes": "Opens commit message editor"},
+    {"id": "lg000004", "app": "lazygit", "description": "Commit with editor", "keys": ["C"], "alternates": [], "tags": ["commit"], "notes": "Opens $EDITOR for commit message"},
+    {"id": "lg000005", "app": "lazygit", "description": "Amend last commit", "keys": ["A"], "alternates": [], "tags": ["commit"], "notes": ""},
+    {"id": "lg000006", "app": "lazygit", "description": "Push", "keys": ["P"], "alternates": [], "tags": ["remote"], "notes": ""},
+    {"id": "lg000007", "app": "lazygit", "description": "Pull", "keys": ["p"], "alternates": [], "tags": ["remote"], "notes": ""},
+    {"id": "lg000008", "app": "lazygit", "description": "Fetch", "keys": ["f"], "alternates": [], "tags": ["remote"], "notes": ""},
+    {"id": "lg000009", "app": "lazygit", "description": "New branch", "keys": ["n"], "alternates": [], "tags": ["branch"], "notes": "From branches panel"},
+    {"id": "lg00000a", "app": "lazygit", "description": "Checkout branch", "keys": ["Space"], "alternates": [], "tags": ["branch"], "notes": "From branches panel"},
+    {"id": "lg00000b", "app": "lazygit", "description": "Rebase onto branch", "keys": ["r"], "alternates": [], "tags": ["branch"], "notes": "From branches panel"},
+    {"id": "lg00000c", "app": "lazygit", "description": "Merge into current", "keys": ["M"], "alternates": [], "tags": ["branch"], "notes": "From branches panel"},
+    {"id": "lg00000d", "app": "lazygit", "description": "Switch panel", "keys": ["Tab"], "alternates": ["h", "l"], "tags": ["navigation"], "notes": "h/l to move left/right between panels"},
+    {"id": "lg00000e", "app": "lazygit", "description": "Navigate items", "keys": ["j", "k"], "alternates": ["up", "down"], "tags": ["navigation"], "notes": ""},
+    {"id": "lg00000f", "app": "lazygit", "description": "Scroll diff", "keys": ["Ctrl+d", "Ctrl+u"], "alternates": [], "tags": ["navigation"], "notes": "Half-page down/up in diff view"},
+    {"id": "lg000010", "app": "lazygit", "description": "Enter/expand", "keys": ["Enter"], "alternates": [], "tags": ["navigation"], "notes": "Enter directory, view commit, etc."},
+    {"id": "lg000011", "app": "lazygit", "description": "Quit", "keys": ["q"], "alternates": [], "tags": ["general"], "notes": ""},
+    {"id": "lg000012", "app": "lazygit", "description": "Menu/actions", "keys": ["x"], "alternates": [], "tags": ["general"], "notes": "Context-sensitive action menu"},
+    {"id": "lg000013", "app": "lazygit", "description": "Undo", "keys": ["z"], "alternates": [], "tags": ["general"], "notes": "Undo last git action via reflog"},
+    {"id": "lg000014", "app": "lazygit", "description": "Redo", "keys": ["Ctrl+z"], "alternates": [], "tags": ["general"], "notes": ""},
+    {"id": "lg000015", "app": "lazygit", "description": "Open file in editor", "keys": ["e"], "alternates": [], "tags": ["file"], "notes": "Opens in $EDITOR"},
+    {"id": "lg000016", "app": "lazygit", "description": "Discard changes", "keys": ["d"], "alternates": [], "tags": ["file"], "notes": "Checkout file / discard unstaged changes"},
+    {"id": "lg000017", "app": "lazygit", "description": "Interactive rebase", "keys": ["i"], "alternates": [], "tags": ["commit"], "notes": "Start interactive rebase from selected commit"},
+    {"id": "lg000018", "app": "lazygit", "description": "Cherry-pick copy", "keys": ["Ctrl+o"], "alternates": [], "tags": ["commit"], "notes": "Copy commit for cherry-pick"},
+    {"id": "lg000019", "app": "lazygit", "description": "Cherry-pick paste", "keys": ["Ctrl+v"], "alternates": [], "tags": ["commit"], "notes": "Paste cherry-picked commits"},
+    {"id": "lg00001a", "app": "lazygit", "description": "Stash changes", "keys": ["s"], "alternates": [], "tags": ["stash"], "notes": "From files panel"},
+    {"id": "lg00001b", "app": "lazygit", "description": "Filter/search", "keys": ["/"], "alternates": [], "tags": ["general"], "notes": ""}
+  ]
+}

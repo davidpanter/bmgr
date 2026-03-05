@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "bindings": [
+    {"id": "tp000001", "app": "top", "description": "Help", "keys": ["h", "?"], "alternates": [], "tags": ["general"], "notes": ""},
+    {"id": "tp000002", "app": "top", "description": "Quit", "keys": ["q"], "alternates": [], "tags": ["general"], "notes": ""},
+    {"id": "tp000003", "app": "top", "description": "Kill process", "keys": ["k"], "alternates": [], "tags": ["action"], "notes": "Prompts for PID and signal"},
+    {"id": "tp000004", "app": "top", "description": "Renice process", "keys": ["r"], "alternates": [], "tags": ["action"], "notes": "Prompts for PID and nice value"},
+    {"id": "tp000005", "app": "top", "description": "Sort by CPU%", "keys": ["P"], "alternates": [], "tags": ["sort"], "notes": "Default sort"},
+    {"id": "tp000006", "app": "top", "description": "Sort by memory%", "keys": ["M"], "alternates": [], "tags": ["sort"], "notes": ""},
+    {"id": "tp000007", "app": "top", "description": "Sort by PID", "keys": ["N"], "alternates": [], "tags": ["sort"], "notes": ""},
+    {"id": "tp000008", "app": "top", "description": "Sort by time", "keys": ["T"], "alternates": [], "tags": ["sort"], "notes": ""},
+    {"id": "tp000009", "app": "top", "description": "Choose sort field", "keys": ["F", "O"], "alternates": [], "tags": ["sort"], "notes": "Interactive field selector"},
+    {"id": "tp00000a", "app": "top", "description": "Reverse sort order", "keys": ["R"], "alternates": [], "tags": ["sort"], "notes": ""},
+    {"id": "tp00000b", "app": "top", "description": "Toggle color", "keys": ["z"], "alternates": [], "tags": ["view"], "notes": ""},
+    {"id": "tp00000c", "app": "top", "description": "Toggle highlight running", "keys": ["y"], "alternates": [], "tags": ["view"], "notes": ""},
+    {"id": "tp00000d", "app": "top", "description": "Toggle bold", "keys": ["B"], "alternates": [], "tags": ["view"], "notes": ""},
+    {"id": "tp00000e", "app": "top", "description": "Toggle tree view", "keys": ["V"], "alternates": [], "tags": ["view"], "notes": ""},
+    {"id": "tp00000f", "app": "top", "description": "Show individual CPUs", "keys": ["1"], "alternates": [], "tags": ["view"], "notes": "Toggle per-CPU display in header"},
+    {"id": "tp000010", "app": "top", "description": "Filter by user", "keys": ["u", "U"], "alternates": [], "tags": ["filter"], "notes": "u=effective user, U=any user"},
+    {"id": "tp000011", "app": "top", "description": "Filter by string", "keys": ["o", "O"], "alternates": [], "tags": ["filter"], "notes": "o=add filter, O=case-insensitive"},
+    {"id": "tp000012", "app": "top", "description": "Clear filters", "keys": ["="], "alternates": [], "tags": ["filter"], "notes": ""},
+    {"id": "tp000013", "app": "top", "description": "Toggle idle processes", "keys": ["i"], "alternates": [], "tags": ["filter"], "notes": "Hide/show idle processes"},
+    {"id": "tp000014", "app": "top", "description": "Set refresh interval", "keys": ["d", "s"], "alternates": [], "tags": ["general"], "notes": "Prompts for delay in seconds"},
+    {"id": "tp000015", "app": "top", "description": "Add/remove columns", "keys": ["f"], "alternates": [], "tags": ["view"], "notes": "Interactive field manager"},
+    {"id": "tp000016", "app": "top", "description": "Locate string", "keys": ["L"], "alternates": [], "tags": ["search"], "notes": "Find next with &"},
+    {"id": "tp000017", "app": "top", "description": "Write config", "keys": ["W"], "alternates": [], "tags": ["general"], "notes": "Saves current layout to ~/.toprc"}
+  ]
+}

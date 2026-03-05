@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "bindings": [
+    {"id": "ht000001", "app": "htop", "description": "Help", "keys": ["F1", "h"], "alternates": [], "tags": ["general"], "notes": ""},
+    {"id": "ht000002", "app": "htop", "description": "Setup", "keys": ["F2", "S"], "alternates": [], "tags": ["general"], "notes": "Configure meters, colors, columns"},
+    {"id": "ht000003", "app": "htop", "description": "Search by name", "keys": ["F3", "/"], "alternates": [], "tags": ["search"], "notes": "Incremental search"},
+    {"id": "ht000004", "app": "htop", "description": "Filter by name", "keys": ["F4", "\\"], "alternates": [], "tags": ["search"], "notes": "Show only matching processes"},
+    {"id": "ht000005", "app": "htop", "description": "Sort by column", "keys": ["F6", ">"], "alternates": ["<"], "tags": ["sort"], "notes": "< and > to cycle sort columns"},
+    {"id": "ht000006", "app": "htop", "description": "Sort by CPU%", "keys": ["P"], "alternates": [], "tags": ["sort"], "notes": ""},
+    {"id": "ht000007", "app": "htop", "description": "Sort by memory%", "keys": ["M"], "alternates": [], "tags": ["sort"], "notes": ""},
+    {"id": "ht000008", "app": "htop", "description": "Sort by time", "keys": ["T"], "alternates": [], "tags": ["sort"], "notes": ""},
+    {"id": "ht000009", "app": "htop", "description": "Tree view (toggle)", "keys": ["F5", "t"], "alternates": [], "tags": ["view"], "notes": "Show process hierarchy"},
+    {"id": "ht00000a", "app": "htop", "description": "Toggle kernel threads", "keys": ["K"], "alternates": [], "tags": ["view"], "notes": ""},
+    {"id": "ht00000b", "app": "htop", "description": "Toggle user processes only", "keys": ["u"], "alternates": [], "tags": ["view"], "notes": "Select user to filter"},
+    {"id": "ht00000c", "app": "htop", "description": "Kill process", "keys": ["F9", "k"], "alternates": [], "tags": ["action"], "notes": "Select signal to send"},
+    {"id": "ht00000d", "app": "htop", "description": "Renice process", "keys": ["F7", "F8"], "alternates": [], "tags": ["action"], "notes": "F7=decrease priority, F8=increase priority"},
+    {"id": "ht00000e", "app": "htop", "description": "Strace process", "keys": ["s"], "alternates": [], "tags": ["action"], "notes": "Attach strace to selected process"},
+    {"id": "ht00000f", "app": "htop", "description": "lsof process", "keys": ["l"], "alternates": [], "tags": ["action"], "notes": "Show open files for selected process"},
+    {"id": "ht000010", "app": "htop", "description": "Tag process", "keys": ["Space"], "alternates": [], "tags": ["selection"], "notes": "Tag for batch operations"},
+    {"id": "ht000011", "app": "htop", "description": "Tag all children", "keys": ["c"], "alternates": [], "tags": ["selection"], "notes": "Tag process and all its children"},
+    {"id": "ht000012", "app": "htop", "description": "Untag all", "keys": ["U"], "alternates": [], "tags": ["selection"], "notes": ""},
+    {"id": "ht000013", "app": "htop", "description": "Scroll left/right", "keys": ["Left", "Right"], "alternates": [], "tags": ["navigation"], "notes": "Scroll column list horizontally"},
+    {"id": "ht000014", "app": "htop", "description": "Quit", "keys": ["F10", "q"], "alternates": [], "tags": ["general"], "notes": ""}
+  ]
+}

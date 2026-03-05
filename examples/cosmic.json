@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "bindings": [
+    {"id": "cs000001", "app": "COSMIC", "description": "Open launcher", "keys": ["Super"], "alternates": [], "tags": ["launcher"], "notes": ""},
+    {"id": "cs000002", "app": "COSMIC", "description": "Open terminal", "keys": ["Super + t"], "alternates": [], "tags": ["app"], "notes": ""},
+    {"id": "cs000003", "app": "COSMIC", "description": "Open file manager", "keys": ["Super + f"], "alternates": [], "tags": ["app"], "notes": ""},
+    {"id": "cs000004", "app": "COSMIC", "description": "Open settings", "keys": ["Super + i"], "alternates": [], "tags": ["app"], "notes": ""},
+    {"id": "cs000005", "app": "COSMIC", "description": "Close window", "keys": ["Super + q"], "alternates": [], "tags": ["window"], "notes": ""},
+    {"id": "cs000006", "app": "COSMIC", "description": "Maximize window", "keys": ["Super + m"], "alternates": [], "tags": ["window"], "notes": ""},
+    {"id": "cs000007", "app": "COSMIC", "description": "Minimize window", "keys": ["Super + h"], "alternates": [], "tags": ["window"], "notes": ""},
+    {"id": "cs000008", "app": "COSMIC", "description": "Toggle floating", "keys": ["Super + g"], "alternates": [], "tags": ["window"], "notes": "Float/unfloat focused window"},
+    {"id": "cs000009", "app": "COSMIC", "description": "Toggle fullscreen", "keys": ["Super + F11"], "alternates": [], "tags": ["window"], "notes": ""},
+    {"id": "cs00000a", "app": "COSMIC", "description": "Tile window left", "keys": ["Super + Left"], "alternates": [], "tags": ["tiling"], "notes": ""},
+    {"id": "cs00000b", "app": "COSMIC", "description": "Tile window right", "keys": ["Super + Right"], "alternates": [], "tags": ["tiling"], "notes": ""},
+    {"id": "cs00000c", "app": "COSMIC", "description": "Focus left", "keys": ["Super + Ctrl + Left"], "alternates": ["Super + Ctrl + h"], "tags": ["focus"], "notes": ""},
+    {"id": "cs00000d", "app": "COSMIC", "description": "Focus right", "keys": ["Super + Ctrl + Right"], "alternates": ["Super + Ctrl + l"], "tags": ["focus"], "notes": ""},
+    {"id": "cs00000e", "app": "COSMIC", "description": "Focus up", "keys": ["Super + Ctrl + Up"], "alternates": ["Super + Ctrl + k"], "tags": ["focus"], "notes": ""},
+    {"id": "cs00000f", "app": "COSMIC", "description": "Focus down", "keys": ["Super + Ctrl + Down"], "alternates": ["Super + Ctrl + j"], "tags": ["focus"], "notes": ""},
+    {"id": "cs000010", "app": "COSMIC", "description": "Move window left", "keys": ["Super + Shift + Left"], "alternates": ["Super + Shift + h"], "tags": ["tiling"], "notes": ""},
+    {"id": "cs000011", "app": "COSMIC", "description": "Move window right", "keys": ["Super + Shift + Right"], "alternates": ["Super + Shift + l"], "tags": ["tiling"], "notes": ""},
+    {"id": "cs000012", "app": "COSMIC", "description": "Move window up", "keys": ["Super + Shift + Up"], "alternates": ["Super + Shift + k"], "tags": ["tiling"], "notes": ""},
+    {"id": "cs000013", "app": "COSMIC", "description": "Move window down", "keys": ["Super + Shift + Down"], "alternates": ["Super + Shift + j"], "tags": ["tiling"], "notes": ""},
+    {"id": "cs000014", "app": "COSMIC", "description": "Switch workspace 1-4", "keys": ["Super + 1-4"], "alternates": [], "tags": ["workspace"], "notes": ""},
+    {"id": "cs000015", "app": "COSMIC", "description": "Move window to workspace", "keys": ["Super + Shift + 1-4"], "alternates": [], "tags": ["workspace"], "notes": ""},
+    {"id": "cs000016", "app": "COSMIC", "description": "Next workspace", "keys": ["Super + Ctrl + Down"], "alternates": [], "tags": ["workspace"], "notes": ""},
+    {"id": "cs000017", "app": "COSMIC", "description": "Previous workspace", "keys": ["Super + Ctrl + Up"], "alternates": [], "tags": ["workspace"], "notes": ""},
+    {"id": "cs000018", "app": "COSMIC", "description": "Toggle tiling mode", "keys": ["Super + y"], "alternates": [], "tags": ["tiling"], "notes": ""},
+    {"id": "cs000019", "app": "COSMIC", "description": "Lock screen", "keys": ["Super + Escape"], "alternates": [], "tags": ["system"], "notes": ""},
+    {"id": "cs00001a", "app": "COSMIC", "description": "Screenshot", "keys": ["Print"], "alternates": [], "tags": ["system"], "notes": ""},
+    {"id": "cs00001b", "app": "COSMIC", "description": "Screenshot region", "keys": ["Shift + Print"], "alternates": [], "tags": ["system"], "notes": ""},
+    {"id": "cs00001c", "app": "COSMIC", "description": "Toggle orientation", "keys": ["Super + o"], "alternates": [], "tags": ["tiling"], "notes": "Switch between horizontal and vertical split"}
+  ]
+}
