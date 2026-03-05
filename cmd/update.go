@@ -17,10 +17,12 @@ var updateCmd = &cobra.Command{
 }
 
 var updateJSON string
+var updateFile string
 
 func init() {
 	rootCmd.AddCommand(updateCmd)
 	updateCmd.Flags().StringVar(&updateJSON, "json", "", "Replacement binding as JSON")
+	updateCmd.Flags().StringVar(&updateFile, "file", "", "Target file in config directory (e.g. tmux.json)")
 	updateCmd.MarkFlagRequired("json")
 }
 
@@ -42,6 +44,12 @@ func runUpdate(cmd *cobra.Command, args []string) error {
 	s, err := store.Load()
 	if err != nil {
 		return err
+	}
+
+	if updateFile != "" {
+		b.SetSourceFile(updateFile)
+	} else if existing := s.FindByID(id); existing != nil {
+		b.SetSourceFile(existing.SourceFile())
 	}
 
 	if err := s.Replace(b); err != nil {

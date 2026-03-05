@@ -135,6 +135,14 @@ func GenerateID() (string, error) {
 	return hex.EncodeToString(b), nil
 }
 
+func (b *Binding) SourceFile() string {
+	return b.sourceFile
+}
+
+func (b *Binding) SetSourceFile(name string) {
+	b.sourceFile = name
+}
+
 func (s *Store) Add(b Binding) error {
 	s.Bindings = append(s.Bindings, b)
 	return nil

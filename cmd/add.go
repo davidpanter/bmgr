@@ -19,10 +19,12 @@ var addCmd = &cobra.Command{
 }
 
 var addJSON string
+var addFile string
 
 func init() {
 	rootCmd.AddCommand(addCmd)
 	addCmd.Flags().StringVar(&addJSON, "json", "", "Add binding from JSON (skips interactive prompts)")
+	addCmd.Flags().StringVar(&addFile, "file", "", "Target file in config directory (e.g. tmux.json)")
 }
 
 func runAdd(cmd *cobra.Command, args []string) error {
@@ -52,6 +54,9 @@ func runAdd(cmd *cobra.Command, args []string) error {
 		}
 		if b.Tags == nil {
 			b.Tags = []string{}
+		}
+		if addFile != "" {
+			b.SetSourceFile(addFile)
 		}
 		s, err := store.Load()
 		if err != nil {
@@ -97,6 +102,10 @@ func runAdd(cmd *cobra.Command, args []string) error {
 		Alternates:  splitAndTrim(altsRaw),
 		Tags:        splitAndTrim(tagsRaw),
 		Notes:       sanitizeTab(notes),
+	}
+
+	if addFile != "" {
+		b.SetSourceFile(addFile)
 	}
 
 	s, err := store.Load()
