@@ -1,0 +1,581 @@
+{
+  "version": 1,
+  "bindings": [
+    {
+      "id": "vimium-j",
+      "app": "Vimium",
+      "description": "Scroll down",
+      "keys": ["j"],
+      "alternates": ["<c-e>"],
+      "tags": ["scroll"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-k",
+      "app": "Vimium",
+      "description": "Scroll up",
+      "keys": ["k"],
+      "alternates": ["<c-y>"],
+      "tags": ["scroll"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-gg",
+      "app": "Vimium",
+      "description": "Scroll to the top of the page",
+      "keys": ["gg"],
+      "alternates": [],
+      "tags": ["scroll"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-G",
+      "app": "Vimium",
+      "description": "Scroll to the bottom of the page",
+      "keys": ["G"],
+      "alternates": [],
+      "tags": ["scroll"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-d",
+      "app": "Vimium",
+      "description": "Scroll a half page down",
+      "keys": ["d"],
+      "alternates": [],
+      "tags": ["scroll"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-u",
+      "app": "Vimium",
+      "description": "Scroll a half page up",
+      "keys": ["u"],
+      "alternates": [],
+      "tags": ["scroll"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-h",
+      "app": "Vimium",
+      "description": "Scroll left",
+      "keys": ["h"],
+      "alternates": [],
+      "tags": ["scroll"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-l",
+      "app": "Vimium",
+      "description": "Scroll right",
+      "keys": ["l"],
+      "alternates": [],
+      "tags": ["scroll"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-zH",
+      "app": "Vimium",
+      "description": "Scroll all the way to the left",
+      "keys": ["zH"],
+      "alternates": [],
+      "tags": ["scroll"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-zL",
+      "app": "Vimium",
+      "description": "Scroll all the way to the right",
+      "keys": ["zL"],
+      "alternates": [],
+      "tags": ["scroll"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-r",
+      "app": "Vimium",
+      "description": "Reload the page",
+      "keys": ["r"],
+      "alternates": [],
+      "tags": ["page"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-R",
+      "app": "Vimium",
+      "description": "Reload the page (hard)",
+      "keys": ["R"],
+      "alternates": [],
+      "tags": ["page"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-yy",
+      "app": "Vimium",
+      "description": "Copy the current URL to the clipboard",
+      "keys": ["yy"],
+      "alternates": [],
+      "tags": ["clipboard"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-p",
+      "app": "Vimium",
+      "description": "Open the clipboard's URL in the current tab",
+      "keys": ["p"],
+      "alternates": [],
+      "tags": ["clipboard"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-P",
+      "app": "Vimium",
+      "description": "Open the clipboard's URL in a new tab",
+      "keys": ["P"],
+      "alternates": [],
+      "tags": ["clipboard"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-gu",
+      "app": "Vimium",
+      "description": "Go up the URL hierarchy",
+      "keys": ["gu"],
+      "alternates": [],
+      "tags": ["navigation"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-gU",
+      "app": "Vimium",
+      "description": "Go to the root of current URL hierarchy",
+      "keys": ["gU"],
+      "alternates": [],
+      "tags": ["navigation"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-i",
+      "app": "Vimium",
+      "description": "Enter insert mode",
+      "keys": ["i"],
+      "alternates": [],
+      "tags": ["mode"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-v",
+      "app": "Vimium",
+      "description": "Enter visual mode",
+      "keys": ["v"],
+      "alternates": [],
+      "tags": ["mode"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-V",
+      "app": "Vimium",
+      "description": "Enter visual line mode",
+      "keys": ["V"],
+      "alternates": [],
+      "tags": ["mode"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-gi",
+      "app": "Vimium",
+      "description": "Focus the first text input on the page",
+      "keys": ["gi"],
+      "alternates": [],
+      "tags": ["focus"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-f",
+      "app": "Vimium",
+      "description": "Open a link in the current tab",
+      "keys": ["f"],
+      "alternates": [],
+      "tags": ["hints", "links"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-F",
+      "app": "Vimium",
+      "description": "Open a link in a new tab",
+      "keys": ["F"],
+      "alternates": [],
+      "tags": ["hints", "links"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-a-f",
+      "app": "Vimium",
+      "description": "Open multiple links in a new tab",
+      "keys": ["<a-f>"],
+      "alternates": [],
+      "tags": ["hints", "links"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-yf",
+      "app": "Vimium",
+      "description": "Copy a link URL to the clipboard",
+      "keys": ["yf"],
+      "alternates": [],
+      "tags": ["hints", "clipboard"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-prev",
+      "app": "Vimium",
+      "description": "Follow the link labeled previous or <",
+      "keys": ["[["],
+      "alternates": [],
+      "tags": ["navigation", "links"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-next",
+      "app": "Vimium",
+      "description": "Follow the link labeled next or >",
+      "keys": ["]]"],
+      "alternates": [],
+      "tags": ["navigation", "links"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-gf",
+      "app": "Vimium",
+      "description": "Select the next frame on the page",
+      "keys": ["gf"],
+      "alternates": [],
+      "tags": ["frames"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-gF",
+      "app": "Vimium",
+      "description": "Select the page's main/top frame",
+      "keys": ["gF"],
+      "alternates": [],
+      "tags": ["frames"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-m",
+      "app": "Vimium",
+      "description": "Create a new mark",
+      "keys": ["m"],
+      "alternates": [],
+      "tags": ["marks"],
+      "notes": "Followed by a letter"
+    },
+    {
+      "id": "vimium-backtick",
+      "app": "Vimium",
+      "description": "Jump to a mark",
+      "keys": ["`"],
+      "alternates": [],
+      "tags": ["marks"],
+      "notes": "Followed by a letter"
+    },
+    {
+      "id": "vimium-o",
+      "app": "Vimium",
+      "description": "Open URL, bookmark or history entry",
+      "keys": ["o"],
+      "alternates": [],
+      "tags": ["vomnibar"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-O",
+      "app": "Vimium",
+      "description": "Open URL, bookmark or history entry in a new tab",
+      "keys": ["O"],
+      "alternates": [],
+      "tags": ["vomnibar"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-b",
+      "app": "Vimium",
+      "description": "Open a bookmark",
+      "keys": ["b"],
+      "alternates": [],
+      "tags": ["vomnibar", "bookmarks"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-B",
+      "app": "Vimium",
+      "description": "Open a bookmark in a new tab",
+      "keys": ["B"],
+      "alternates": [],
+      "tags": ["vomnibar", "bookmarks"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-T",
+      "app": "Vimium",
+      "description": "Search through your open tabs",
+      "keys": ["T"],
+      "alternates": [],
+      "tags": ["vomnibar", "tabs"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-ge",
+      "app": "Vimium",
+      "description": "Edit the current URL",
+      "keys": ["ge"],
+      "alternates": [],
+      "tags": ["vomnibar"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-gE",
+      "app": "Vimium",
+      "description": "Edit the current URL and open in a new tab",
+      "keys": ["gE"],
+      "alternates": [],
+      "tags": ["vomnibar"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-slash",
+      "app": "Vimium",
+      "description": "Enter find mode",
+      "keys": ["/"],
+      "alternates": [],
+      "tags": ["find"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-n",
+      "app": "Vimium",
+      "description": "Cycle forward to the next find match",
+      "keys": ["n"],
+      "alternates": [],
+      "tags": ["find"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-N",
+      "app": "Vimium",
+      "description": "Cycle backward to the previous find match",
+      "keys": ["N"],
+      "alternates": [],
+      "tags": ["find"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-star",
+      "app": "Vimium",
+      "description": "Find the selected text",
+      "keys": ["*"],
+      "alternates": [],
+      "tags": ["find"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-hash",
+      "app": "Vimium",
+      "description": "Find the selected text, searching backwards",
+      "keys": ["#"],
+      "alternates": [],
+      "tags": ["find"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-H",
+      "app": "Vimium",
+      "description": "Go back in history",
+      "keys": ["H"],
+      "alternates": [],
+      "tags": ["history"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-L",
+      "app": "Vimium",
+      "description": "Go forward in history",
+      "keys": ["L"],
+      "alternates": [],
+      "tags": ["history"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-t",
+      "app": "Vimium",
+      "description": "Create new tab",
+      "keys": ["t"],
+      "alternates": [],
+      "tags": ["tabs"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-J",
+      "app": "Vimium",
+      "description": "Go one tab left",
+      "keys": ["J"],
+      "alternates": ["gT"],
+      "tags": ["tabs"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-K",
+      "app": "Vimium",
+      "description": "Go one tab right",
+      "keys": ["K"],
+      "alternates": ["gt"],
+      "tags": ["tabs"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-caret",
+      "app": "Vimium",
+      "description": "Go to previously-visited tab",
+      "keys": ["^"],
+      "alternates": [],
+      "tags": ["tabs"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-g0",
+      "app": "Vimium",
+      "description": "Go to the first tab",
+      "keys": ["g0"],
+      "alternates": [],
+      "tags": ["tabs"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-gdollar",
+      "app": "Vimium",
+      "description": "Go to the last tab",
+      "keys": ["g$"],
+      "alternates": [],
+      "tags": ["tabs"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-yt",
+      "app": "Vimium",
+      "description": "Duplicate current tab",
+      "keys": ["yt"],
+      "alternates": [],
+      "tags": ["tabs"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-a-p",
+      "app": "Vimium",
+      "description": "Pin or unpin current tab",
+      "keys": ["<a-p>"],
+      "alternates": [],
+      "tags": ["tabs"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-a-m",
+      "app": "Vimium",
+      "description": "Mute or unmute current tab",
+      "keys": ["<a-m>"],
+      "alternates": [],
+      "tags": ["tabs"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-x",
+      "app": "Vimium",
+      "description": "Close current tab",
+      "keys": ["x"],
+      "alternates": [],
+      "tags": ["tabs"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-X",
+      "app": "Vimium",
+      "description": "Restore closed tab",
+      "keys": ["X"],
+      "alternates": [],
+      "tags": ["tabs"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-W",
+      "app": "Vimium",
+      "description": "Move tab to new window",
+      "keys": ["W"],
+      "alternates": [],
+      "tags": ["tabs"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-tabl",
+      "app": "Vimium",
+      "description": "Move tab to the left",
+      "keys": ["<<"],
+      "alternates": [],
+      "tags": ["tabs"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-tabr",
+      "app": "Vimium",
+      "description": "Move tab to the right",
+      "keys": [">>"],
+      "alternates": [],
+      "tags": ["tabs"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-zi",
+      "app": "Vimium",
+      "description": "Zoom in",
+      "keys": ["zi"],
+      "alternates": [],
+      "tags": ["zoom"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-zo",
+      "app": "Vimium",
+      "description": "Zoom out",
+      "keys": ["zo"],
+      "alternates": [],
+      "tags": ["zoom"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-z0",
+      "app": "Vimium",
+      "description": "Reset zoom",
+      "keys": ["z0"],
+      "alternates": [],
+      "tags": ["zoom"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-gs",
+      "app": "Vimium",
+      "description": "View page source",
+      "keys": ["gs"],
+      "alternates": [],
+      "tags": ["page"],
+      "notes": ""
+    },
+    {
+      "id": "vimium-question",
+      "app": "Vimium",
+      "description": "Show help",
+      "keys": ["?"],
+      "alternates": [],
+      "tags": ["help"],
+      "notes": ""
+    }
+  ]
+}
