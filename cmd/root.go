@@ -35,6 +35,12 @@ func Execute() {
 func init() {
 	fzfCommands := map[string]bool{"": true, "list": true, "edit": true, "remove": true}
 	rootCmd.PersistentPreRunE = func(cmd *cobra.Command, args []string) error {
+		if guiFlag {
+			if err := spawnGui(); err != nil {
+				return err
+			}
+			os.Exit(0)
+		}
 		if !fzfCommands[cmd.Name()] {
 			return nil
 		}
@@ -44,6 +50,8 @@ func init() {
 		return nil
 	}
 	rootCmd.PersistentFlags().StringVar(&appFilter, "app", "", "limit display to a specific application (case-insensitive substring match)")
+	rootCmd.PersistentFlags().BoolVarP(&guiFlag, "gui", "g", false, "open in a floating terminal window")
+	rootCmd.PersistentFlags().StringVar(&guiTheme, "theme", "cosmic", "fuzzel color theme: cosmic, dracula, nord")
 	rootCmd.AddCommand(listCmd)
 }
 
