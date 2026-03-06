@@ -55,13 +55,12 @@ var themes = map[string]fuzzelTheme{
 	},
 }
 
-// spawnGui runs the GUI popup. Tries fuzzel (native Wayland, no decorations)
-// first, then falls back to spawning a terminal with fzf.
+// spawnGui runs the GUI popup via fuzzel (native Wayland, no decorations).
 func spawnGui() error {
-	if _, err := exec.LookPath("fuzzel"); err == nil {
-		return runFuzzel()
+	if _, err := exec.LookPath("fuzzel"); err != nil {
+		return fmt.Errorf("fuzzel not found in PATH — install it with: brew install fuzzel  or  apt install fuzzel")
 	}
-	return spawnTerminal()
+	return runFuzzel()
 }
 
 // runFuzzel pipes bindings into fuzzel --dmenu and displays a native popup.
@@ -126,54 +125,3 @@ func runFuzzel() error {
 	return nil
 }
 
-// spawnTerminal re-launches bmgr in a floating terminal window, passing through
-// all args except --gui itself.
-func spawnTerminal() error {
-	self, err := os.Executable()
-	if err != nil {
-		return fmt.Errorf("cannot determine executable path: %w", err)
-	}
-
-	var args []string
-	for _, a := range os.Args[1:] {
-		if a == "--gui" || a == "-g" {
-			continue
-		}
-		args = append(args, a)
-	}
-
-	terminals := []struct {
-		bin  string
-		argv func(self string, args []string) []string
-	}{
-		{"cosmic-term", func(self string, args []string) []string {
-			return append([]string{"--"}, append([]string{self}, args...)...)
-		}},
-		{"foot", func(self string, args []string) []string {
-			return append([]string{"--app-id=bmgr-popup", "--override=csd.preferred=none", "--"}, append([]string{self}, args...)...)
-		}},
-		{"kitty", func(self string, args []string) []string {
-			return append([]string{"--class=bmgr-popup", "--"}, append([]string{self}, args...)...)
-		}},
-		{"alacritty", func(self string, args []string) []string {
-			return append([]string{"--class", "bmgr-popup", "-e"}, append([]string{self}, args...)...)
-		}},
-		{"xterm", func(self string, args []string) []string {
-			return append([]string{"-e"}, append([]string{self}, args...)...)
-		}},
-	}
-
-	for _, t := range terminals {
-		path, err := exec.LookPath(t.bin)
-		if err != nil {
-			continue
-		}
-		cmd := exec.Command(path, t.argv(self, args)...)
-		cmd.Stdin = os.Stdin
-		cmd.Stdout = os.Stdout
-		cmd.Stderr = os.Stderr
-		return cmd.Run()
-	}
-
-	return fmt.Errorf("no supported terminal emulator found (tried: cosmic-term, foot, kitty, alacritty, xterm)")
-}

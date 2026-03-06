@@ -27,6 +27,7 @@ go build -o bmgr .
 ## Dependencies
 
 - [fzf](https://github.com/junegunn/fzf) (required for browsing)
+- [fuzzel](https://codeberg.org/dnkl/fuzzel) (required for `--gui`)
 
 ## Usage
 
@@ -38,6 +39,28 @@ bmgr edit                   # Select and edit a binding in $EDITOR
 bmgr remove                 # Select and remove a binding
 bmgr import-keyb [file]     # Import from a keyb YAML file
 ```
+
+### GUI / floating popup
+
+```
+bmgr --gui                  # Open a floating popup window
+bmgr --gui --app tmux       # Popup filtered to a specific app
+bmgr --gui --theme dracula  # Popup with a specific color theme
+```
+
+The `--gui` / `-g` flag opens bmgr outside the terminal using [fuzzel](https://codeberg.org/dnkl/fuzzel) in dmenu mode for a native, decoration-free Wayland popup. fuzzel must be installed and in PATH.
+
+#### Themes
+
+The `--theme` flag sets the fuzzel color scheme (default: `cosmic`):
+
+| Theme     | Description                          |
+|-----------|--------------------------------------|
+| `cosmic`  | System76 COSMIC dark palette         |
+| `dracula` | Dracula color scheme                 |
+| `nord`    | Nord color scheme                    |
+
+Themes are passed directly as fuzzel color arguments.
 
 ### Non-interactive (scripting)
 
